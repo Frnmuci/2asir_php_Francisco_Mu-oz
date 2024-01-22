@@ -10,6 +10,18 @@ function media($alumno){
     return $media;
     
 }
+
+function mayor_media($alumno,$media){
+   foreach ($alumno as $nota){
+      if ($nota > $media){
+         echo $nota;
+         echo "<br>";
+      }
+   }
+}
+
+mayor_media($alumno,media($alumno));
+echo "La media de las notas es: ";
 echo media($alumno);
 echo "</br>";
 
